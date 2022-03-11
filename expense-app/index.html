@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Expense Tracker App</title>
+  </head>
+  <body>
+    <header id="header-text" class="header-text">
+      <h1>Expense Tracker App</h1>
+    </header>
+    <main id="main-container" class="main-container">
+      <div class="container">
+        <div class="trs-title">
+          <label>Transaction Label</label>
+          <input
+            class="input-title"
+            type="text"
+            placeholder="Enter Transaction Title"
+          />
+        </div>
+        <div class="amount">
+          <label>Amount For Transaction</label>
+          <input
+            class="input-amount"
+            type="number"
+            placeholder="Enter Your Transaction Amount"
+          />
+        </div>
+        <div class="date">
+          <label>Date Of Transaction</label>
+          <input
+            class="input-date"
+            type="date"
+            placeholder="Enter Transaction Date"
+          />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="submit">Submit</button>
+      </div>
+
+      <table class="myTables">
+        <tbody>
+          <tr class="hidden trs-header" id="trs-header">
+            <th>Transaction ID</th>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+          <tr class="hidden trs-one" id="trs-one">
+            <td>Transaction 1</td>
+            <td id="label-1"></td>
+            <td id="amount-1"></td>
+            <td id="date-1"></td>
+          </tr>
+          <tr class="hidden trs-two">
+            <!-- <td>Transaction 2</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+          <tr class="hidden trs-three">
+            <!-- <td>Transaction 3</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+          <tr class="hidden trs-four">
+            <!-- <td>Transaction 4</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+          <tr class="hidden trs-five">
+            <!-- <td>Transaction 5</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+          <tr class="hidden trs-six">
+            <!-- <td>Transaction 6</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+          <tr class="hidden trs-seven">
+            <!-- <td>Transaction 7</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
