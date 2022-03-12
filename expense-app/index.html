@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Expense Tracker App</title>
+  </head>
+  <body>
+    <header id="header-text" class="header-text">
+      <h1>Expense Tracker App</h1>
+    </header>
+    <main id="main-container" class="main-container">
+      <div class="container">
+        <div class="trs-title">
+          <label>Transaction Label</label>
+          <input
+          id="input-title"
+            class="input-title"
+            type="text"
+            placeholder="Enter Transaction Title"
+            required
+          />
+        </div>
+        <div class="amount">
+          <label>Amount For Transaction</label>
+          <input
+          id="input-amount"
+            class="input-amount"
+            type="number"
+            placeholder="Enter Your Transaction Amount"
+            required
+          />
+        </div>
+        <div class="date">
+          <label>Date Of Transaction</label>
+          <input
+          id="input-date"
+            class="input-date"
+            type="date"
+            placeholder="Enter Transaction Date"
+            required
+          />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="submit">Submit</button>
+      </div>
+
+      <table id="myTables">
+          <tr class=".trs-header" id="trs-header">
+            <!-- <td>Transaction</th> -->
+            <td class="header-title">Title</th>
+            <td class="header-amount">Amount</th>
+            <td class="header-date">Date</th>
+            </tr>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
